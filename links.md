@@ -9,6 +9,11 @@ https://www.timestamp-converter.com/
 
 https://www.google.com/search?q=ISO+8601+convertor+google+sheets&sca_esv=99c2029f8f463a7b&rlz=1C5CHFA_enUS999US999&sxsrf=APpeQntOLWdZpDJ4vBN3igxdVcC8c4TtRw%3A1785284931679&ei=Q0lpaqKQKfLNptQP3a6FiA4&biw=1200&bih=883&uact=5&sclient=gws-wiz-serp&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlCZ_qea3ZQNMU_L5SWbG8ROva_LKGdZoPsB7f_pNLAVJWp9IQ1GSOPaLf6lQXFiNaz6dOgmooJUYsFr31d5CoJGkaF3G9t-FAQ5RTDLyRhMJl-BYIs3ZqfWMtD5drQaDN0-5MATJU4ED20yVcqCIiIckAnUrA&aep=10&ntc=1&mstk=AUtExfDAbsc7R1emxQUgXIf-R4ZYoug_gQbh7iVwPYa8uFKdOacBp58t5X1aKPdXWh90x5qyveZgryZOQ4Ce4dTzvuWwH8QXckH_z2kjmpAk_vX8Zfp26x1fVK8EK8B63WnbqaI7glmSPZt886JPcQbv_DYho5jXa2x7PCevn8xDvdj0G5tXPPYOhGM58ONAIPblxcgb6qmkcq65EMVUcjYZr96q_GXW5jr9k2k_nR4mDv6FRDq1Sefv7Xc_Jw&aioh=3&csuir=1&cs=1&mtid=WmVpatHkGp2W5OMPjZ644Qs
 
+johnnyevans@Johnnys-MacBook-Pro DOGE % cd /Users/johnnyevans/Documents/GitHub/Kalshi_API_Test/ETH 
+johnnyevans@Johnnys-MacBook-Pro ETH % sort -t, -k1,1 merged.csv > sort.csv
+
+johnnyevans@Johnnys-MacBook-Pro Kalshi_API_Test % cd BTC                
+johnnyevans@Johnnys-MacBook-Pro BTC % cat *.csv > merged.csv
 
 https://docs.kalshi.com/getting_started/historical_data
 
