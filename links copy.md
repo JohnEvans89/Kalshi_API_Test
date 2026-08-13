@@ -1,7 +1,15 @@
 [Gist](https://gist.github.com/JohnEvans89)
 
 https://www.markdownguide.org/basic-syntax/
+_
 
+I love supporting the **[EFF](https://eff.org)**.
+
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+
+See the section on [`code`](#code).
+
+_
 
 https://kalshi.com/markets/kxbtc15m/bitcoin-price-up-down/kxbtc15m-26may281945
 
@@ -137,3 +145,15 @@ https://www.unixtimestamp.com/
 https://www.youtube.com/watch?v=S3sFMlJz-Iw&list=PLU8ezI8GYqs7hJp2tx3k7eReVqSCQYDQg
 https://www.youtube.com/watch?v=Xu6WDdulLs0&list=PLU8ezI8GYqs7hJp2tx3k7eReVqSCQYDQg
 https://www.youtube.com/watch?v=mf1EVFRitmo&list=PLU8ezI8GYqs7hJp2tx3k7eReVqSCQYDQg
+
+
+| Market | series_ticker | Current Link | Historical Link |
+| -------- | -------- | -------- | -------- |
+| BTC  | KXBTC15M  | [BTC_Curr](https://external-api.kalshi.com/trade-api/v2/markets?limit=1000&series_ticker=KXBTC15M)  |
+| BNB | KXBNB15M | [BNB_Curr](https://external-api.kalshi.com/trade-api/v2/markets?limit=1000&series_ticker=KXBNB15M)  |
+| ETH | KXETH15M |
+| SOL | KXSOL15M |
+
+
+kxhighlax
+
