@@ -135,6 +135,54 @@ def fetch_pagination_kalshi_historical_data(series_name):
 
     print(f"Finished {series_name}. Total pages processed: {page_count}\n")
 
+
+
+def merge(series_name):
+    """
+    Merges the historical and current CSV files for a given series into a single CSV file.
+    """
+    hist_file = f"{series_name}_new_hist.csv"
+    curr_file = f"{series_name}_new_curr.csv"
+    merged_file = f"{series_name}_merged.csv"
+
+    if not os.path.isfile(hist_file):
+        print(f"Historical file {hist_file} does not exist. Skipping merge.")
+        return
+    if not os.path.isfile(curr_file):
+        print(f"Current file {curr_file} does not exist. Skipping merge.")
+        return
+
+    df_hist = pd.read_csv(hist_file)
+    df_curr = pd.read_csv(curr_file)
+
+    # Concatenate and drop duplicates
+    df_merged = pd.concat([df_hist, df_curr]).drop_duplicates().reset_index(drop=True)
+
+    # Save merged file
+    df_merged.to_csv(merged_file, index=False)
+    print(f"Merged data saved to {merged_file}. Total rows: {len(df_merged)}\n")
+
+def sort_by_event_ticker(series_name):
+    """
+    Sorts the merged CSV file by event_ticker and saves it.
+    """
+    merged_file = f"{series_name}_merged.csv"
+    sorted_file = f"{series_name}_sorted.csv"
+
+    if not os.path.isfile(merged_file):
+        print(f"Merged file {merged_file} does not exist. Skipping sort.")
+        return
+
+    df_merged = pd.read_csv(merged_file)
+
+    # Sort by event_ticker
+    df_sorted = df_merged.sort_values(by="event_ticker").reset_index(drop=True)
+
+    # Save sorted file
+    df_sorted.to_csv(sorted_file, index=False)
+    print(f"Sorted data saved to {sorted_file}. Total rows: {len(df_sorted)}\n")
+
+
 # BNB
 fetch_pagination_kalshi_historical_data("KXBNB15M")
 fetch_pagination_kalshi_current_data("KXBNB15M")
@@ -163,7 +211,24 @@ fetch_pagination_kalshi_current_data("KXSOL15M")
 fetch_pagination_kalshi_historical_data("KXXRP15M")
 fetch_pagination_kalshi_current_data("KXXRP15M")
 
+merge("KXBNB15M")
+merge("KXBTC15M")
+merge("KXDOGE15M")
+merge("KXETH15M")
+merge("KXGOLD15M")
+merge("KXHYPE15M")
+merge("KXSILVER15M")
+merge("KXSOL15M")
+merge("KXXRP15M")
 
-
+sort_by_event_ticker("KXBNB15M")
+sort_by_event_ticker("KXBTC15M")
+sort_by_event_ticker("KXDOGE15M")
+sort_by_event_ticker("KXETH15M")
+sort_by_event_ticker("KXGOLD15M")
+sort_by_event_ticker("KXHYPE15M")
+sort_by_event_ticker("KXSILVER15M")
+sort_by_event_ticker("KXSOL15M")
+sort_by_event_ticker("KXXRP15M")
 
 # fetch_and_save_kalshi_paging("KXBTC15M")
