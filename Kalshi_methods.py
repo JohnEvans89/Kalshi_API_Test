@@ -136,7 +136,26 @@ def fetch_pagination_kalshi_historical_data(series_name):
     print(f"Finished {series_name}. Total pages processed: {page_count}\n")
 
 
+# cat *DOGE15M_sorted.csv > DOGE_new_merged.csv  
+# rm *DOGE15M_sorted.csv 
 
+# cat *ETH15M_sorted.csv > ETH_new_merged.csv
+# rm *ETH15M_sorted.csv
+
+# # cat *GOLD15M_sorted.csv > GOLD_new_merged.csv
+# # rm *GOLD15M_sorted.csv
+
+# cat *HYPE15M_sorted.csv > HYPE_new_merged.csv
+# rm *HYPE15M_sorted.csv  
+
+# # cat *SILVER15M_sorted.csv > SILVER_new_merged.csv
+# # rm *SILVER15M_sorted.csv
+
+# cat *SOL15M_sorted.csv > SOL_new_merged.csv
+# rm *SOL15M_sorted.csv   
+
+# cat *XRP15M_sorted.csv > XRP_new_merged.csv
+# rm *XRP15M_sorted.csv  
 def merge(series_name):
     """
     Merges the historical and current CSV files for a given series into a single CSV file.
