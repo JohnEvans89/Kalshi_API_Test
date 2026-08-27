@@ -175,7 +175,7 @@ def merge(series_name):
     df_curr = pd.read_csv(curr_file)
 
     # Concatenate and drop duplicates
-    df_merged = pd.concat([df_hist, df_curr]).drop_duplicates().reset_index(drop=True)
+    df_merged = pd.concat([df_hist, df_curr]).reset_index(drop=True)
 
     # Save merged file
     df_merged.to_csv(merged_file, index=False)
