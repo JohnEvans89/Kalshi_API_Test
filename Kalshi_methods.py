@@ -203,35 +203,38 @@ def sort_by_event_ticker(series_name):
 
 
 # BNB
-fetch_pagination_kalshi_historical_data("KXBNB15M")
+# fetch_pagination_kalshi_historical_data("KXBNB15M")
 fetch_pagination_kalshi_current_data("KXBNB15M")
 # # BTC
-fetch_pagination_kalshi_historical_data("KXBTC15M")
+# fetch_pagination_kalshi_historical_data("KXBTC15M")
 fetch_pagination_kalshi_current_data("KXBTC15M")
 # # DOGE
-fetch_pagination_kalshi_historical_data("KXDOGE15M")
+# fetch_pagination_kalshi_historical_data("KXDOGE15M")
 fetch_pagination_kalshi_current_data("KXDOGE15M")
 # # ETH
-fetch_pagination_kalshi_historical_data("KXETH15M")
+# fetch_pagination_kalshi_historical_data("KXETH15M")
 fetch_pagination_kalshi_current_data("KXETH15M")
 # # GOLD
-fetch_pagination_kalshi_historical_data("KXGOLD15M")
+# fetch_pagination_kalshi_historical_data("KXGOLD15M")
 fetch_pagination_kalshi_current_data("KXGOLD15M")
 # # HYPE  
-fetch_pagination_kalshi_historical_data("KXHYPE15M")
+# fetch_pagination_kalshi_historical_data("KXHYPE15M")
 fetch_pagination_kalshi_current_data("KXHYPE15M")
 # # SILVER
-fetch_pagination_kalshi_historical_data("KXSILVER15M")
+# fetch_pagination_kalshi_historical_data("KXSILVER15M")
 fetch_pagination_kalshi_current_data("KXSILVER15M")
 # # SOL
-fetch_pagination_kalshi_historical_data("KXSOL15M")
+# fetch_pagination_kalshi_historical_data("KXSOL15M")
 fetch_pagination_kalshi_current_data("KXSOL15M")
 # # XRP
-fetch_pagination_kalshi_historical_data("KXXRP15M")
+# fetch_pagination_kalshi_historical_data("KXXRP15M")
 fetch_pagination_kalshi_current_data("KXXRP15M")
 # OIL
-fetch_pagination_kalshi_historical_data("KXWTI15M")
+# fetch_pagination_kalshi_historical_data("KXWTI15M")
 fetch_pagination_kalshi_current_data("KXWTI15M")
+# Natural Gas
+# fetch_pagination_kalshi_historical_data("KXNATGAS15M")
+fetch_pagination_kalshi_current_data("KXNATGAS15M")
 
 
 merge("KXBNB15M")
@@ -244,6 +247,7 @@ merge("KXSILVER15M")
 merge("KXSOL15M")
 merge("KXXRP15M")
 merge("KXWTI15M")
+merge("KXNATGAS15M")
 
 sort_by_event_ticker("KXBNB15M")
 sort_by_event_ticker("KXBTC15M")
@@ -255,5 +259,6 @@ sort_by_event_ticker("KXSILVER15M")
 sort_by_event_ticker("KXSOL15M")
 sort_by_event_ticker("KXXRP15M")
 sort_by_event_ticker("KXWTI15M")
+sort_by_event_ticker("KXNATGAS15M")
 
 # fetch_and_save_kalshi_paging("KXBTC15M")
